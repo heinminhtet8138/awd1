@@ -20,10 +20,10 @@ small{
 }
 
 /* attribute selector */
-a[title="google"]{
+/* a[title="google"]{
     color: red;
     text-decoration: none;
-}
+} */
 
 /* id selector */
 #idselector{
@@ -40,4 +40,38 @@ a[title="google"]{
 /* class selector */
 .classselector{
     color: red;
+}
+
+/* descendent selector */
+.desc a{
+    color: red;
+}
+
+/* child selector */
+.child > a{
+    color: green;
+}
+
+
+/* pseudo selector */
+a[title="google"]:link,a[title="facebook"]{
+   color: red; 
+}
+a[title="google"]:hover{
+    color: green;
+    text-decoration: none;
+}
+a[title="google"]:active{
+    color: yellow;
+}   
+
+a:visited{
+    color: brown;
+}
+
+/* target */
+p:target{
+    color: red;
+    line-height: 30px;
+    word-spacing: 20px;
 }
