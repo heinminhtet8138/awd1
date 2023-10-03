@@ -17,6 +17,8 @@ small{
 /* universal selector */
 *{
   /* color: green;   */
+  margin: 0px;
+  padding: 0px;
 }
 
 /* attribute selector */
@@ -74,4 +76,56 @@ p:target{
     color: red;
     line-height: 30px;
     word-spacing: 20px;
+}
+
+/* border */
+.borderone{
+    border: 20px double red;
+}
+
+.bordertwo{
+    border-top: 20px solid green;
+}
+
+.borderthree{
+    border: 5px solid green;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.borderstyle{
+    /* border-style: dashed; */
+    /* T R B L */
+    /* border-style: solid dashed; */
+    /* T/B  L/R */
+    /* border-style: dashed solid double; */
+    /* T   L/R   B */
+    border-style: dashed solid dotted double;
+    /* T R B L */
+
+    /* border-color: red; */
+
+    border-width: 20px;
+
+}
+
+.bordercolor{
+    border-style: dotted;
+    border-color: red;
+}
+
+
+/* margin */
+.margin{
+    border: 2px solid red;
+    /* margin: 50px; */
+    margin: 40px 100px;
+    /* margin-top: 40px; */
+}
+
+/* padding */
+.padding{
+    border: 3px solid green;
+    /* padding: 50px; */
+    padding: 40px 200px;
+    /* padding-left: 100px; */
 }

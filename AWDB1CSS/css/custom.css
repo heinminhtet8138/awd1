@@ -20,3 +20,47 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,in
     border: 3px solid gray;
     outline: none;
 }
+
+input[type="radio"]:checked + label{
+    color: red;
+    text-transform: uppercase;
+}
+
+input[type="checkbox"]:enabled + label{
+    color: yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label{
+    color: red;
+    font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label{
+    color: gray;
+}
+
+#address{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* first child */
+li:first-child{
+    background-color: red;
+}
+
+li:last-child{
+    background-color: green;
+}
+
+li:nth-child(3){
+    background-color: yellow;
+}
+/* empty */
+
+p:empty{
+    height: 20px;
+    background-color: aquamarine;
+}
