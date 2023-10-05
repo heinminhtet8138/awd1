@@ -129,3 +129,66 @@ p:target{
     padding: 40px 200px;
     /* padding-left: 100px; */
 }
+
+
+/* Layout */
+
+.inline{
+    border: 1px solid red;
+    width: 200px;
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid green;
+    width: 200px;
+    display: inline-block;
+}
+
+/* float */
+.float_left_img{
+    width: 50%;
+    /* float: left; */
+}
+.float_text{
+    float: left;
+    width: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right_img{
+    width: 50%;
+    float: right;
+}
+/* grid */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.gridone,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+}
+
+.gridtwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    /* grid-gap: 40px; */
+}
+
+.columnadd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.rowadd{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
