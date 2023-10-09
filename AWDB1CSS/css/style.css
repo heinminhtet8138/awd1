@@ -192,3 +192,53 @@ p:target{
     grid-row-end: 4;
 }
 
+/* position */
+
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 400px;
+}
+
+
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.absolute_parent{
+    border: 1px solid brown;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+.absolute{
+    border: 1px solid yellow;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+.online_font{
+    font-family: 'Dancing Script', cursive;
+}
+
+@font-face {
+    src: url(../Lobster/Lobster-Regular.ttf);
+    font-family: one;
+
+}
+.offline{
+    font-family: one;
+}
