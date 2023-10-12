@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+    <script>
+
+        // string
+        let firstName = "Developer";
+        let lastName = 'Kyaw Gyi';
+
+        let fullName = firstName +' ' + lastName;
+        document.write(fullName);
+
+        document.write('<br>');
+
+        document.write(fullName.length);
+        document.write('<br>');
+
+        document.write("My name is " + fullName);
+        document.write('<br>');
+
+        document.write('<h1>' + "My name is " + firstName + '</h1>' + '<h2>' + lastName + '</h2>');
+
+        document.write(`<h1> My name is ${firstName} </h1> <h2> ${lastName} </h2>`);
+
+
+        document.write(fullName.toUpperCase());
+        document.write('<br>');
+
+        document.write(fullName.toLowerCase());
+        document.write('<br>');
+
+        let name= "My name is Kyaw Zin Aung";
+        document.write(name.substr(8,2));
+        document.write('<br>');
+
+        let job = "                      Web      Developer       ";
+        document.write(job.trim());
+        console.log(job);
+        console.log(job.trim());
+
+
+        let ser = "Javascript is funny!";
+        console.log(ser.search('b'));
+        console.log(ser.indexOf('is'));
+
+        let rep = "I want to visit Mandalay!";
+        console.log(rep.replace('Mandalay','Yangon'));
+
+
+        let num = '1,232,234,23';
+        console.log(num.replace(/\,/g,''));
+
+
+        console.log('I\'m Kyaw Zin Aung');
+        console.log("I'm Kyaw Zin Aung");
+        console.log("I'm Kyaw Zin Aung , 5' 6\"");
+        console.log(`I'm Kyaw Zin Aung , 5' 6"`);
+
+
+
+        console.log(firstName.concat(' Ko ',lastName));
+
+
+        
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
