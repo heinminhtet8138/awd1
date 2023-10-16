@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Array</h1>
+    <script>
+        // array
+        let student = ['Mg Mg','Ag Ag','Ma Ma'];
+        console.log(student.length);
+        console.log(student[1]);
+
+
+        student.push('Kyaw Kyaw');
+        console.log(student);
+
+        let student1 = ['Mg Mg','Ag Ag','Ma Ma'];
+
+        // student1.pop();
+        console.log(student1);
+
+        student1.unshift('Mya Mya')
+        console.log(student1);
+
+        student1.shift();
+        console.log(student1);
+
+
+        let student2 = ['Mg Mg','Ag Ag','Ma Ma','Mya Mya'];
+
+        // console.log(student2);
+        // student2.sort();
+        console.log(student2);
+
+
+        student2.sort().reverse();
+        console.log(student2);
+
+
+
+        console.log(student2.toString());
+
+
+        let studentList = "Kyaw Zin Aung,Aung Aung,Mg Mg,Tun Tun";
+
+        console.log(studentList);
+        studentList=studentList.split(' ');
+        console.log(studentList);
+
+
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        let arr3 = [7,8,9];
+
+        let arr4 = arr1.concat(arr2);
+        console.log(arr4);
+
+        let arr5 = [...arr1,...arr2,...arr3,...arr4];
+        console.log(arr5);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
