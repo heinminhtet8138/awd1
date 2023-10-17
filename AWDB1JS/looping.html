@@ -11,9 +11,90 @@
     <h2>Hello Wor1d</h2>
     <script>
         //for loop
-        for (var assign; comparsion; update) {
-            // code
+        // for (var assign; comparsion; update) {
+        //     // code
+        // }
+
+        for(var no = 1; no <= 10 ; no++){
+            document.write('<h2>For Loop</h2>');
         }
+
+        let laptopList = ['Acer','Dell','HP','Lenovo','Macbook','Hawei','Asus','MSI'];
+                   
+        for(let i = 0 ; i < laptopList.length ; i++){
+
+            document.write(`<h2>` + laptopList[i] + `</h2>`);
+
+        }
+
+
+
+        for(let k = 1; k <= 12 ; k++ ){
+            document.write(`<h3> 15 X ${k} = ${15*k}`);
+        }
+
+
+        // homework
+        // user input number  ali
+        document.write('<br>');
+
+
+        for(let j = 0 ; j < 5 ; j++){
+
+            for(let g = 0 ; g <= j ; g++){
+                document.write('*');
+            }
+            document.write('<br>');            
+        }
+
+        // homework
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+
+
+        // while loop
+
+        // while (condition) {
+        //     // code
+        //     // updated
+        // }
+
+
+        let num = prompt('Enter a Number');
+
+        while (num > 100) {
+            // code 
+            document.write(`<h2> Your number is ${num}`);
+            num -= 5;            
+        }
+
+
+
+        // do while
+        // do {
+        //     // code
+        //     // updated
+            
+        // } while (condition);
+
+
+        let number = 10;
+        do{
+            document.write(`<h2> You are number is ${number} </h2>`);
+            number++;
+        }while(number < 20)
+
+
+
+        // homework
+
+        
+
+
+
     </script>
 </body>
 </html>
