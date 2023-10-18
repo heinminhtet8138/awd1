@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        // function 
+
+        // function name(argument) {
+        //     // code
+        // }
+
+
+        function funName(){
+            // code
+            document.write(`<h2> This is Nameing Function`);
+        }
+
+        funName();
+        document.write(`<br> `);
+
+
+        // parameter function
+
+        function sum(num1,num2) {
+            let result = num1 + num2;
+            document.write(`Result Sum is ` + result);
+            document.write(`<br> `);
+            
+        }
+        sum(20,40);
+        sum(21,32);
+        sum(32,2);
+        sum(3,45);
+
+        // defult parameter function
+         function sub(num1=100 , num2=50) {
+            let result = num1 - num2;
+            document.write(`Result Sub is ` + result);
+            document.write(`<br> `);
+         }
+
+         sub();
+         sub(40,3);
+         sub(34,3);
+         sub(50,3);
+
+
+        //  return function
+        function result(num1 , num2) {
+            let result = num1 * num2;
+            return result; 
+        }
+
+
+        let mulresult=result(3,5);
+        // document.write(mulresult);
+        // let mulresult=result(3,5);
+        console.log(mulresult);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
