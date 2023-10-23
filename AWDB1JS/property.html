@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="mybody">
+    <h1>Property & Method</h1>
+    <h2 id="createTextNode"></h2>
+    <p id="setAttr">This is Set Attribute</p>
+    <p id="getAttr" style="color: green;">This is Get Attribute</p>
+
+    <button onclick="createText()">Create Text Node</button>
+    <button onclick="createElementLesson()">Create Element Node</button>
+    <button onclick="createAttr()">Create Attribute Node</button>
+    <button onclick="getAttr()">Get Attribute Node</button>
+
+
+    <script>
+        function createText(){
+            let createText = document.createTextNode('This is Create Text Node');
+            document.getElementById('createTextNode').appendChild(createText);
+        }
+
+
+        function createElementLesson(){
+            // alert('ok');
+            let h4 = document.createElement('h4');
+            h4.innerText ="This is Create Element";
+            // console.log(h4);
+            document.getElementById('mybody').appendChild(h4);
+        }
+
+
+        function createAttr() {
+            // alert('ok');
+            let p = document.getElementById('setAttr');
+            p.setAttribute('style','color:red;')
+        }
+
+        function getAttr() {
+            let getAttr = document.getElementById('getAttr');
+            console.log(getAttr.getAttribute('style'));
+        }
+    </script>
+</body>
+</html>

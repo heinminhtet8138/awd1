@@ -8,13 +8,13 @@
 <body>
     <h1>Student Register</h1>
 
-    <form action="">
+    <form action="" name="myform">
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
         <br>
         <br>
         <label for="age">Age</label>
-        <input type="text" name="age" id="age">
+        <input type="number" name="age" id="age">
         <br>
         <br>
         <label for="address">Address</label>
@@ -35,27 +35,58 @@
                 <th>Address</th>
             </tr>
         </thead>
-        <tbody id="tbody">
-            <tr>
-                <td>1</td>
-                <td>Kyaw Zin Aung</td>
-                <td>27</td>
-                <td>Yangon</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Kyaw Zin Aung</td>
-                <td>27</td>
-                <td>Yangon</td>
-            </tr>
+        <tbody id="mybody">
+            
         </tbody>
     </table>
 
 
     <script>
-        function showData() {
-            alert('ok');
 
+        var studentArray = [];
+        function showData() {
+            // get input data
+            // let name = document.myform.name.value;
+            let name = document.getElementById('name').value;
+            let age = document.myform.age.value;
+            let address = document.myform.address.value;
+            // console.log(name,age,address);
+
+
+            // create object
+            let student = {
+                studentName : name,
+                studentAge : age,
+                studentAddress : address
+            }
+            // console.log(student);
+
+            // create array
+            studentArray.push(student);
+            // console.log(studentArray);
+
+
+            // show data
+            // console.log(studentArray.length);
+            showStudent();
+            
+        }
+
+
+
+        function showStudent() {
+            let html = '';
+            for (let i = 0; i < studentArray.length; i++) {
+                // console.log(studentArray[i]);
+                html += `<tr>
+                            <td> ${i+1}</td>
+                            <td> ${studentArray[i].studentName}</td>
+                            <td> ${studentArray[i].studentAge}</td>
+                            <td> ${studentArray[i].studentAddress}</td>
+
+                        </tr>`;
+            }
+            document.getElementById('mybody').innerHTML = html;
         }
     </script>
 </body>
