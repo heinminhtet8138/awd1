@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Lesson</h1>
+
+    <img src="images/1.jpg" alt="" id="myImage" width="300" height="300" onmouseenter="big()" onmouseleave="normal()">
+
+    <!-- 
+        onmouserover
+        onmouserenter
+
+
+        onmouseout
+        onmouseleave
+     -->
+    <br>
+    <input type="text" id="myInput" onkeydown="sayHi()">
+
+
+    <!-- 
+        onkeyup
+        onkeydown
+        onchange
+     -->
+
+    <p id="myResult"></p>
+
+    <script>
+
+        function big() {
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = '600px';
+            myImage.style.height = '600px';
+
+        }
+
+        function normal(){
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = '300px';
+            myImage.style.height = '300px';
+        }
+
+        function sayHi(){
+            let myInput = document.getElementById('myInput').value;
+            document.getElementById('myResult').innerHTML = myInput;
+
+        }
+
+    </script>
+</body>
+</html>

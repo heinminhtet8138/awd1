@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stydent Register</h1>
+    
+
+    <form action="register.php" onsubmit="return checkValue()">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <span id="nameRequired"></span>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword"><br><br>
+
+
+        <button type="submit">Register</button>
+
+    </form>
+
+
+    <script>
+        function checkValue(){
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirmPassword = document.getElementById('confirmPassword').value;
+
+            // console.log(name,email,password,confirmPassword);
+
+            if (name == "") {
+                document.getElementById('name').style.border= '1px solid red';
+                document.getElementById('nameRequired').innerHTML= 'Field name is required';
+                document.getElementById('nameRequired').style.color= 'red';
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+   1. css project
+   2. even odd
+   3. star 
+   4. mul
+   5. digital clock
+   6. guess game
+   7. daily expense
+   8. validation
+ -->

@@ -17,6 +17,11 @@
     <button onclick="getAttr()">Get Attribute Node</button>
 
 
+    <p id="color" style="color: blue;">Change Color</p>
+
+    <button onclick="changeColor()">Change Color</button>
+
+
     <script>
         function createText(){
             let createText = document.createTextNode('This is Create Text Node');
@@ -43,6 +48,24 @@
             let getAttr = document.getElementById('getAttr');
             console.log(getAttr.getAttribute('style'));
         }
+
+        function changeColor(){
+            let color = document.getElementById('color');
+            let colorName = color.getAttribute('style');
+            console.log(colorName);
+            if (colorName  == "color: blue;") {
+                color.removeAttribute('style');
+                color.setAttribute('style','color: red;');
+            }else{
+                color.removeAttribute('style');
+                color.setAttribute('style','color: blue;');
+
+            }
+        }
+
+
+
+
     </script>
 </body>
 </html>
